@@ -13,6 +13,9 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class EnterpriseListAdapters(private val data: List<Payload>) :
     RecyclerView.Adapter<EnterpriseListAdapters.ModelViewHolder>() {
+
+    var onItemClick: ((Payload) -> Unit)? = null
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,6 +31,8 @@ class EnterpriseListAdapters(private val data: List<Payload>) :
         val currentItem = data[position]
         Glide.with(holder.itemView).load(currentItem.logo).into(holder.logo)
         holder.titleTV.text = currentItem.name
+
+
     }
 
     override fun getItemCount(): Int {
@@ -42,6 +47,10 @@ class EnterpriseListAdapters(private val data: List<Payload>) :
         init {
             titleTV = itemView.findViewById(R.id.enterpriseNameId)
             logo = itemView.findViewById(R.id.enterproseLogoId)
+
+            itemView.setOnClickListener{
+                onItemClick?.invoke(data[adapterPosition])
+            }
 
         }
 

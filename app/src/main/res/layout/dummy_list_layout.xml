@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:weightSum="6">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/enterproseLogoId"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
-
-    <Space
-        android:layout_width="20dp"
-        android:layout_height="match_parent"/>
-
-    <TextView
-        android:id="@+id/enterpriseNameId"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:text="Bsrm"
-        android:textSize="30sp"/>
+        android:layout_weight="2">
 
-    <Space
-        android:layout_width="20dp"
-        android:layout_height="match_parent"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/enterproseLogoId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="#FF000000" />
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_launcher_foreground"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/enterpriseNameId"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:layout_height="match_parent"
+            android:text="Bsrm"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrow_right"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
