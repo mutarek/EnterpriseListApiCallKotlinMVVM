@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         hideShimmer(binding)
 
         adapter.onItemClick = {
+            enterpriseViewModel.checkMarchantList(it.id)
             showShimmer(binding)
             enterpriseViewModel.checkMerchantData.observe(this) { checkMerchantData ->
                 if (checkMerchantData != null) {

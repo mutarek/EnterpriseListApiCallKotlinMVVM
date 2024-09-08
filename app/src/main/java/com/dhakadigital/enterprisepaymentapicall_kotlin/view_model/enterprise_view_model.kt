@@ -72,7 +72,7 @@ class EnterpriseViewModel() : ViewModel() {
         _isLoading.value = false
     }
 
-    private fun checkMarchantList(enterpriseID: String){
+    fun checkMarchantList(enterpriseID: String){
         _isLoading.value = true
         _isError.value = false
         val body = CheckEnterpriseRequest(enterpriseID)
