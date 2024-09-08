@@ -73,22 +73,17 @@ class EnterpriseViewModel() : ViewModel() {
     }
 
     fun checkMarchantList(enterpriseID: String){
+        println("Enterprise ID: $enterpriseID")
         _isLoading.value = true
         _isError.value = false
         val body = CheckEnterpriseRequest(enterpriseID)
         val client = ApiConfig.getApiService().checkEnterpriseMerchant(body)
-
         client.enqueue(object : Callback<CheckEnterpriseResponse> {
             override fun onResponse(
                 call: Call<CheckEnterpriseResponse>,
                 response: Response<CheckEnterpriseResponse>
             ) {
                 val responseBody = response.body()
-                if (!response.isSuccessful || responseBody == null) {
-                    onError("Data Processing Error")
-                    return
-                }
-
                 _isLoading.value = false
                 _checkMerchantData.postValue(responseBody)
             }

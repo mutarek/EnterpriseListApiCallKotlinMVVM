@@ -63,7 +63,13 @@ class MainActivity : AppCompatActivity() {
             showShimmer(binding)
             enterpriseViewModel.checkMerchantData.observe(this) { checkMerchantData ->
                 if (checkMerchantData != null) {
-                    println(checkMerchantData.toString())
+                    hideShimmer(binding)
+                    if(checkMerchantData.issuccess){
+                        Toast.makeText(this, checkMerchantData.statusCode.toString(), Toast.LENGTH_SHORT).show()
+                    }
+                    else{
+                        Toast.makeText(this, checkMerchantData.message, Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
         }
