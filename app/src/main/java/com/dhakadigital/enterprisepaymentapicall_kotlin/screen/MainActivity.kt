@@ -10,6 +10,7 @@ import com.dhakadigital.enterprisepaymentapicall_kotlin.databinding.ActivityMain
 import com.dhakadigital.enterprisepaymentapicall_kotlin.models.response.EnterpriseListResponse
 import com.dhakadigital.enterprisepaymentapicall_kotlin.models.response.Payload
 import com.dhakadigital.enterprisepaymentapicall_kotlin.view_model.EnterpriseViewModel
+import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
     private lateinit var enterpriseViewModel: EnterpriseViewModel
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         enterpriseViewModel = EnterpriseViewModel()
         subscribe()
+
     }
 
     private fun subscribe() {
@@ -36,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             if (enterpriseData != null) {
                 setResultText(enterpriseData)
             }
+            //
             binding.progressBar.visibility = View.GONE
             binding.progressLinear.visibility = View.GONE
             binding.enterpriseListRecyclerView.visibility = View.VISIBLE
