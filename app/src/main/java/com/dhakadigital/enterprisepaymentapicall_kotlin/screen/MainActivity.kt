@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             if (enterpriseData != null) {
                 setResultText(enterpriseData)
             }
-            //
+            //Loading bar
             binding.progressBar.visibility = View.GONE
             binding.progressLinear.visibility = View.GONE
             binding.enterpriseListRecyclerView.visibility = View.VISIBLE
