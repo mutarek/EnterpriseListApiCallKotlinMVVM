@@ -1,10 +1,18 @@
 name: Build & Release
 on:
   push:
+    branches:
+      - main
+      - master
 jobs:
-  build:
-    name: Build & Release
-    runs-on: windows-latest
-
+  flutter_test:
+    name: Run Flutter assigned build apk
+    runs-on: ubuntu-latest
     steps:
-      - uses:  buildApkFile
+      - uses: actions/checkout@v2
+        with:
+          java-version: ${{env.JAVA_VERSION}}
+
+      # Creating the key.properties file
+      - run: |
+          echo "Build apk command"
