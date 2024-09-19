@@ -1,0 +1,10 @@
+name: Build & Release
+on:
+  push:
+jobs:
+  build:
+    name: Build & Release
+    runs-on: windows-latest
+
+    steps:
+      - uses:  buildApkFile
