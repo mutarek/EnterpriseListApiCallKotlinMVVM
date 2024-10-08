@@ -15,4 +15,4 @@ jobs:
 
       # Creating the key.properties file
       - run: |
-          echo "Build apk command"
+          echo "Build apk commands"
