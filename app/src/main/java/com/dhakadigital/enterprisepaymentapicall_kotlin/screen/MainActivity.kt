@@ -88,4 +88,5 @@ fun hideShimmer(binding: ActivityMainBinding) {
 fun showShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.startShimmer()
     binding.shimmerView.visibility = View.VISIBLE
+    //VIEW VISIBLE FOR SHIMMER
 }
