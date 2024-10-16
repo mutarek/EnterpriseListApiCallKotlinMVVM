@@ -89,4 +89,5 @@ fun showShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.startShimmer()
     binding.shimmerView.visibility = View.VISIBLE
     //VIEW VISIBLE FOR SHIMMER have to work in kotlin
+    //need to implement all api for bsrm
 }
