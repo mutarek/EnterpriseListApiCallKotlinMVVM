@@ -91,4 +91,5 @@ fun showShimmer(binding: ActivityMainBinding) {
     //VIEW VISIBLE FOR SHIMMER have to work in kotlin
     //need to implement all api for bsrm
     //need to implement all api for bsrm
+    //have to work best
 }
