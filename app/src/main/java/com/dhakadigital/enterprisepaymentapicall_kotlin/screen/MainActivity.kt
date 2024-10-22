@@ -93,4 +93,5 @@ fun showShimmer(binding: ActivityMainBinding) {
     //need to implement all api for bsrm
     //have to work best
     //have to work  best last 4 days
+    //binding.shimmerView.visibility = View.VISIBLE
 }
