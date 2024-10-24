@@ -82,18 +82,10 @@ class MainActivity : AppCompatActivity() {
 fun hideShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.stopShimmer()
     binding.shimmerView.visibility = View.GONE
-    //VIew Gone for shimmer
 }
 
 fun showShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.startShimmer()
     binding.shimmerView.visibility = View.VISIBLE
-    //binding.shimmerView.visibility = View.VISIBLE
-    //VIEW VISIBLE FOR SHIMMER have to work in kotlin
-    //need to implement all api for bsrm
-    //need to implement all api for bsrm
-    //have to work best
-    //have to work  best last 4 days
-    //binding.shimmerView.visibility = View.VISIBLE
 
 }
