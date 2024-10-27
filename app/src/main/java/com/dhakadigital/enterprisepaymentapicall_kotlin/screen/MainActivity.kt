@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
 fun hideShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.stopShimmer()
     binding.shimmerView.visibility = View.GONE
+    //dsd,v,ds
 }
 
 fun showShimmer(binding: ActivityMainBinding) {
