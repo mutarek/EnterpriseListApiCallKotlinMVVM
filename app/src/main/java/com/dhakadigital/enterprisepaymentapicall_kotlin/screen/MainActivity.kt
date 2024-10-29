@@ -84,6 +84,7 @@ fun hideShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.visibility = View.GONE
     //dsd,v,ds
     //i dont know
+    //have to work with ml kit google
 }
 
 fun showShimmer(binding: ActivityMainBinding) {
