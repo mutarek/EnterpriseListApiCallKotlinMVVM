@@ -81,11 +81,7 @@ class MainActivity : AppCompatActivity() {
 
 fun hideShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.stopShimmer()
-    binding.shimmerView.visibility = View.GONE
-    //dsd,v,ds
-    //i dont know
-    //have to work with ml kit google
-    //no more fun
+    binding.shimmerView.visibility = View.VISIBLE
 }
 
 fun showShimmer(binding: ActivityMainBinding) {
