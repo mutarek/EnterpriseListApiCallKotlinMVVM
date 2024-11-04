@@ -90,6 +90,5 @@ fun showShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.startShimmer()
     binding.shimmerView.visibility = View.VISIBLE
     // for shimmer loading view is visible
-    //have to carry laptop in home
 
 }
