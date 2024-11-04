@@ -83,6 +83,7 @@ fun hideShimmer(binding: ActivityMainBinding) {
     binding.shimmerView.stopShimmer()
     binding.shimmerView.visibility = View.GONE
     //for shimmer loading view gone
+    //need to implement all of enterprise api
 }
 
 fun showShimmer(binding: ActivityMainBinding) {
