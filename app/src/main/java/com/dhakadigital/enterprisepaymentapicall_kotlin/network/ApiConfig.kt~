@@ -20,6 +20,7 @@ class ApiConfig {
 
             // Retrofit
             val retrofit = Retrofit.Builder()
+                //Base Url you can call it from globally also
                 .baseUrl("http://finifyapi.redltd.tech:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
