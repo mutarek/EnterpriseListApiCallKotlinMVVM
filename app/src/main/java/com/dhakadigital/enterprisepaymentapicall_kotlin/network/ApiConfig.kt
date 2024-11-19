@@ -23,6 +23,7 @@ class ApiConfig {
                 // in this section we setup the Retrofit
                 //have to set
                 //kkk
+                //smkamcksa
                 .baseUrl("http://finifyapi.redltd.tech:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
