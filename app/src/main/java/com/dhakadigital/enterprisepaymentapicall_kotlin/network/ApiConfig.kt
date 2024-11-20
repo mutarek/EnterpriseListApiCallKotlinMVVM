@@ -24,6 +24,7 @@ class ApiConfig {
                 //have to set
                 //kkk
                 //smkamcksa
+                //sasac
                 .baseUrl("http://finifyapi.redltd.tech:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
