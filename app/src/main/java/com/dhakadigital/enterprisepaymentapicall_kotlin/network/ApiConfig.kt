@@ -25,6 +25,8 @@ class ApiConfig {
                 .client(client)
                 .build()
 
+            //have to intregate debugger to debug api
+
             return retrofit.create(ApiService::class.java)
         }
     }
