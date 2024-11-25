@@ -20,7 +20,7 @@ class ApiConfig {
 
             // Retrofit
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://finifyapi.redltd.tech:8052/")
+                .baseUrl("http://finifyapi.redltd.tech:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
