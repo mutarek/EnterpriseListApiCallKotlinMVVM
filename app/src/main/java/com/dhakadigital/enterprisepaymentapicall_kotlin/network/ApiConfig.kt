@@ -27,6 +27,7 @@ class ApiConfig {
 
             //have to intregate debugger to debug api
             //dagger hilt also have to implement
+            //after a long days
 
             return retrofit.create(ApiService::class.java)
         }
