@@ -29,6 +29,7 @@ class ApiConfig {
             //dagger hilt also have to implement
             //after a long days
             // kotlin view binding
+            //scpakscpkasc
 
             return retrofit.create(ApiService::class.java)
         }
