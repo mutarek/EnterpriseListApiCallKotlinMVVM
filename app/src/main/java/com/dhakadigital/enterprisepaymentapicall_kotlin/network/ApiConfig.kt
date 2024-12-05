@@ -30,6 +30,7 @@ class ApiConfig {
             //after a long days
             // kotlin view binding
             //scpakscpkasc
+            //new code
 
             return retrofit.create(ApiService::class.java)
         }
