@@ -25,13 +25,6 @@ class ApiConfig {
                 .client(client)
                 .build()
 
-            //have to intregate debugger to debug api
-            //dagger hilt also have to implement
-            //after a long days
-            // kotlin view binding
-            //scpakscpkasc
-            //new code
-
             return retrofit.create(ApiService::class.java)
         }
     }
