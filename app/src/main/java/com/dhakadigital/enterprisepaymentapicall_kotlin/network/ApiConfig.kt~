@@ -25,8 +25,6 @@ class ApiConfig {
                 .client(client)
                 .build()
 
-            // API service
-
             return retrofit.create(ApiService::class.java)
         }
     }
