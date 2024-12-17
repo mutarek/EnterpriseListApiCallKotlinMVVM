@@ -20,10 +20,12 @@ class ApiConfig {
 
             // Retrofit
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://finifyapi.redltd.tech:8052/")
+                .baseUrl("http://finifyapi.redltd.tech:8052//")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
+
+            //have to work kotlin multiplatform
 
             return retrofit.create(ApiService::class.java)
         }
