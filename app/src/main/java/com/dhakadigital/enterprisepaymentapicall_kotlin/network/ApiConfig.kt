@@ -18,7 +18,6 @@ class ApiConfig {
                 .addInterceptor(ServiceInterceptor())
                 .build()
 
-            //Alhamdullah solved
             // Retrofit
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://finifyapi.redltd.tech:8052//")
