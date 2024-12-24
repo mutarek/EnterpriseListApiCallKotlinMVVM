@@ -17,6 +17,7 @@ class ApiConfig {
             val client = OkHttpClient.Builder()
                 .addInterceptor(ServiceInterceptor())
                 .build()
+            //Retrofit
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://finifyapi.redltd.tech:8052//")
                 .addConverterFactory(GsonConverterFactory.create())
