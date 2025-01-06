@@ -18,8 +18,7 @@ class ApiConfig {
             val client = OkHttpClient.Builder()
                 .addInterceptor(ServiceInterceptor())
                 .build()
-            //test purpose
-            //test purpose
+            //must carry laptop to home
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://gps.motolockbd.com/api/")
                 .addConverterFactory(GsonConverterFactory.create())
