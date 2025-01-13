@@ -19,8 +19,6 @@ class ApiConfig {
                 .addInterceptor(ServiceInterceptor())
                 .build()
             //must carry laptop to home
-            //have to learn swift code
-            //must be clean code
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://gps.motolockbd.com/api/")
                 .addConverterFactory(GsonConverterFactory.create())
