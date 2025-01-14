@@ -26,6 +26,7 @@ class ApiConfig {
                 .build()
 
             //have to work kotlin multiplatform
+            //sssass
 
             return retrofit.create(ApiService::class.java)
         }
