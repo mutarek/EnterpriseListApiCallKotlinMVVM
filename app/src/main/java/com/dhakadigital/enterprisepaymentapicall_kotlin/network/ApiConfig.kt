@@ -20,7 +20,7 @@ class ApiConfig {
                 .build()
             //must carry laptop to home
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://gps.motolockbd.com/api/ sdsd")
+                .baseUrl("http://gps.motolockbd.com/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
